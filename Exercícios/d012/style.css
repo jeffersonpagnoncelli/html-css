@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+
+
+    --fonte-destaque-header: 'Passion One', sans-serif;
+    --fonte-paragrafo-header: 'Times New Roman', serif;
+    --fonte-main: 'Sriracha', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: black;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque-header);
+    font-size: 3.4em; 
+    font-weight: 100;
+    
+}
+
+header h1 span {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+header > p{
+    color: white;
+    font-family: var(--fonte-paragrafo-header);
+    padding-top: 5px;
+    
+}
+
+header > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+header > p > a:hover{
+    text-decoration: underline;
+}
+
+
+.poema {
+    white-space: pre-line;
+    font-size: 2.9em;
+    font-family: var(--fonte-main);
+    padding: 0px 10px 10px 10px;
+}
+
+
+
+.parallax1 {
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.parallax1 .content1{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.247);
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    font-size: 1.1em;
+    z-index: 1;
+
+}
+
+.parallax2 {
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.parallax2 .content2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.247);
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    font-size: 1.1em;
+    z-index: 1;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
