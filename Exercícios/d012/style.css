@@ -16,20 +16,23 @@
     padding: 0px;
 }
 
-html {
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
     scroll-behavior: smooth;
 }
 
 header{
     background-color: black;
+    color: white;
     min-height: 150px;
     text-align: center;
-    padding-top: 80px;
+    
     
 }
 
 header > h1{
-    color: white;
+    padding-top: 50px;
     font-family: var(--fonte-destaque-header);
     font-size: 3.4em; 
     font-weight: 100;
@@ -43,31 +46,44 @@ header h1 span {
 
 
 header > p{
-    color: white;
     font-family: var(--fonte-paragrafo-header);
-    padding-top: 5px;
+    padding-bottom: 50px;
     
 }
 
-header > p > a{
+a {
     color: white;
-    font-weight: bolder;
     text-decoration: none;
-    
+    font-weight: bolder;
 }
 
-header > p > a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-
-.poema {
-    white-space: pre-line;
-    font-size: 2.9em;
-    font-family: var(--fonte-main);
-    padding: 0px 10px 10px 10px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+
+}
 
 
 .parallax1 {
@@ -123,12 +139,3 @@ footer{
     
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
