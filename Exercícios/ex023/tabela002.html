@@ -13,20 +13,38 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
-
-        thead{
-            background-color: gray;
-            color: white;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
-        tfoot{
-            background-color: gray;
+
+        thead, tfoot{
+            background-color: #383838;
             color: white;
+
+        }
+        
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -38,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,15 +65,16 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
@@ -168,6 +188,17 @@
                 <td class="num">605.761</td>
             </tr>
         </tbody>
+    
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quaerat, culpa magni aspernatur illum tenetur nihil, perferendis asperiores molestias quidem voluptas non? Voluptas odio magni quod voluptatibus, impedit laboriosam unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis consequuntur sint voluptate enim, nulla, quis dolore maiores delectus, pariatur atque sapiente voluptatum! Dolorum sunt maiores quis nemo qui ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, obcaecati modi a nostrum pariatur officia accusantium. Rerum, asperiores itaque temporibus similique impedit aut deserunt in, blanditiis iste totam, aspernatur eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium cupiditate iusto, ipsam culpa molestiae, porro eligendi ullam vero debitis amet inventore hic esse ex quos tempora aperiam fugit est expedita. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quaerat, culpa magni aspernatur illum tenetur nihil, perferendis asperiores molestias quidem voluptas non? Voluptas odio magni quod voluptatibus, impedit laboriosam unde.</p>
+
 </body>
 </html>
